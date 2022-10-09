@@ -1,0 +1,102 @@
+header{
+    background: #D1D1D1;
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.5vw;
+
+
+    }  
+main{
+    background-color: rgb(241, 249, 205);
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+    'section aside';
+    font-weight: 800;
+    font-size: 1.5vw;
+    
+    }
+    section{
+        padding:20px ;
+        grid-area: section;
+        display: grid;
+        grid-template-rows: 60% 20% 20%;
+        grid-template-areas: 
+        'row1' 
+        'row2' 
+        'row3';
+}
+.row1{
+    grid-area: row1;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.row2{
+    grid-area: row2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    font-weight: 800;
+    }
+.up_box{
+    flex-grow:1;
+    height: 100%;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    background-color: aquamarine;
+    font-weight: 800;
+
+}
+.row3{
+    grid-area: row3;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    display: flex;
+    margin-bottom: 15px;
+    font-weight: 800;
+    
+}
+.boxright{
+    margin-right:25px;
+} 
+.wrapper{
+        display: grid;
+        height:100vh;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 10vh 60vh 30vh;
+        grid-template-areas: "header header "
+        "main main "
+        "footer footer";
+}
+aside{
+    background-color:  rgb(214, 242, 197);
+    grid-area:aside;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 15px;
+}
+    footer{
+        display: flex;
+        grid-area: footer;
+        justify-content: space-around;
+        align-items: center;
+        background: #D1D1D1;
+}
+.box {
+    background-color: white;
+    flex-basis: 24%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}  
